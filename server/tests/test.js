@@ -8,10 +8,10 @@ var request = supertest.agent(app.listen());
 
 // UNIT test begin
 describe('Test', () => {
-  it ('should return Smartport App', function (done)  {
+  it ('should return App', function (done)  {
      request
     .get('/')
-    .expect('Smartport App')
+    .expect('App')
     .end(done);
   });
 });

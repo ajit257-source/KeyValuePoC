@@ -1,0 +1,47 @@
+table {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.mat-row:hover {
+    background-color:lightgray;
+}
+
+th.mat-header-cell {
+    text-align: left;
+    max-width: 300px!important;
+    color: #4c2929;
+    font-size: 1.2vw;
+}
+
+.customStyle {
+    padding-left: 20px;
+}
+
+.highalert {
+    color: red;
+    font-weight: bold;
+}
+
+.mediumalert {
+    color: darkorange;
+    font-weight: bold;
+}
+
+.lowalert {
+    color: yellow;
+    font-weight: bold;
+}
+
+.customWidthClassSmall {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 9%
+}
+
+.customWidthClassMedium {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 30%
+}

@@ -1,0 +1,44 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover, a:active{
+    color: lightgray;
+}
+
+.navigation-items{
+    list-style-type: none;
+    padding: 10;
+    margin: 10;
+}
+
+mat-toolbar{
+    border-radius: 3px;
+    background: #4d6d9a;
+    color: #fff;
+}
+
+@media(max-width: 1200px){
+    mat-toolbar{
+        border-radius: 0px;
+    }
+}
+
+.colorizable {
+    filter:
+        /* for demonstration purposes; originals not entirely black */
+        contrast(1000%)
+        /* black to white */
+        invert(100%)
+        /* white to off-white */
+        sepia(100%)
+        /* off-white to yellow */
+        saturate(10000%)
+        /* do whatever you want with yellow */
+        hue-rotate(90deg);
+}
+
+.mat-headline {
+    font-size: 30px;
+}

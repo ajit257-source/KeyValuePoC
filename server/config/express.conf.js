@@ -51,7 +51,8 @@ app.use(function(err, req, res, next) {
 //API EndPoints
 app.route('/')
   .get(function (req, res) {
-      res.send("Wecome to App !");
+      //res.send("Wecome to App !");
+      res.sendFile(path.join(__dirname,'/dist/keyValue/index.html'));
 });
 
 app.route('/api')

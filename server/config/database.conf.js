@@ -6,11 +6,9 @@ in previous exercise, Therefore, use the cluster credentials
 
 // Load mongoose module
 //----- Include the required Packages
-const environment = require('dotenv');
 const mongoose = require('mongoose');
 mongoose.set('useCreateIndex', true);
 
-environment.config(); // read config from .env file
 // Declare a variable named uri and assign MongoDB connection string
 const uri = process.env.MONGOURI || "mongodb://localhost:27017/local"; //This will be provided externally
 const options = {

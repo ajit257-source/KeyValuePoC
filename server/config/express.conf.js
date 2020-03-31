@@ -31,6 +31,10 @@ app.use(function(req, res, next) {
 app.use(bodyParser.urlencoded({limit: "50mb", extended: true,parameterLimit: 1000000 }));
 app.use(bodyParser.json({ limit: "50mb", type: '*/*' }));
 
+// Create link to Angular build directory
+var distDir = __dirname + "/dist/";
+app.use(express.static(distDir));
+
 // production error handler
 // no stacktraces leaked to user
 app.use(function(err, req, res, next) {

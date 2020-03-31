@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { AgmCoreModule } from '@agm/core';
 
 import { HttpClientModule } from '@angular/common/http';
@@ -41,6 +41,7 @@ import { KeyvalueDetailsComponent } from './keyvalue-details/keyvalue-details.co
     RoutingModule,
     MaterialModule,
     HttpClientModule,
+    FormsModule,
     CommonModule,
     MatTableModule,
     MatDialogModule,

@@ -32,7 +32,8 @@ app.use(bodyParser.urlencoded({limit: "50mb", extended: true,parameterLimit: 100
 app.use(bodyParser.json({ limit: "50mb", type: '*/*' }));
 
 // Create link to Angular build directory
-var distDir = __dirname + "/dist/";
+var rootPath = path.dirname(require.main.filename)
+var distDir = path.join(rootPath, 'dist/keyvalue');
 app.use(express.static(distDir));
 
 // production error handler
@@ -48,6 +49,7 @@ app.use(function(err, req, res, next) {
  app.use('/api/', keyValueRoutes);
 
  app.use(errorHandler);
+
 //API EndPoints
 // app.route('/')
 //   .get(function (req, res) {

@@ -52,7 +52,7 @@ app.route('/')
 
 app.route('/api')
   .get(function (req, res) {
-      res.send("PAGE NOT FOUND", 404);
+      res.status(404).send("PAGE NOT FOUND")
 });
 
 app.route('*').get(function (req, res) { //check for correct error

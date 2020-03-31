@@ -59,8 +59,4 @@ app.route('/api')
       res.status(404).send("PAGE NOT FOUND")
 });
 
-app.route('*').get(function (req, res) { //check for correct error
-  res.send("Error on URL. Page not found");
-});
-
 module.exports = app;

@@ -32,7 +32,7 @@ app.use(bodyParser.urlencoded({limit: "50mb", extended: true,parameterLimit: 100
 app.use(bodyParser.json({ limit: "50mb", type: '*/*' }));
 
 // Create link to Angular build directory
-var distDir = __dirname + "/dist/";
+var distDir = __dirname + "/dist/keyValue";
 app.use(express.static(distDir));
 
 // production error handler

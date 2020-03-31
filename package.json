@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --open | nodemon server/",
-    "build": "ng build",
+    "build": "ng build --prod --aot",
     "test": "./node_modules/.bin/mocha --recursive ./server/tests/ --forceExit",
     "lint": "ng lint",
     "e2e": "ng e2e"

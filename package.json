@@ -4,10 +4,12 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --open | nodemon server/",
-    "build": "ng build --prod --aot",
+    "build": "ng build",
     "test": "./node_modules/.bin/mocha --recursive ./server/tests/ --forceExit",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "preinstall": "npm install -g angular-cli",
+    "postinstall": "ng build && mv dist/* ."
   },
   "private": true,
   "dependencies": {

@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'smartport-server'`, () => {
+  it(`should have as title 'keyvalue'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('smartport-server');
+    expect(app.title).toEqual('keyvalue');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('smartport-server app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('keyvalue app is running!');
   });
 });

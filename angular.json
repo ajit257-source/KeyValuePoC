@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "smartport-server": {
+    "keyvalue": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/smartport-server",
+            "outputPath": "dist/keyvalue",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -70,18 +70,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "smartport-server:build"
+            "browserTarget": "keyvalue:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "smartport-server:build:production"
+              "browserTarget": "keyvalue:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "smartport-server:build"
+            "browserTarget": "keyvalue:build"
           }
         },
         "test": {
@@ -119,16 +119,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "smartport-server:serve"
+            "devServerTarget": "keyvalue:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "smartport-server:serve:production"
+              "devServerTarget": "keyvalue:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "smartport-server"
+  "defaultProject": "keyvalue"
 }

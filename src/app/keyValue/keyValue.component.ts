@@ -76,7 +76,7 @@ export class KeyValueComponent implements OnInit, AfterViewInit {
     this.dataSource.data = refreshTable;
   }
 
-  private updateRowData(row_obj: any){
+  public updateRowData(row_obj: any){
     this.dataSource.data = this.dataSource.data.filter((obj,key)=>{
       if(obj._id == row_obj.id){
         obj.value = row_obj.value;
@@ -85,7 +85,7 @@ export class KeyValueComponent implements OnInit, AfterViewInit {
     });
   }
 
-  private deleteRowData(row_obj: any) {
+  public deleteRowData(row_obj: any) {
     this.repoService.delete('api/keyValue/delete/' + row_obj._id).subscribe(res => {
       console.log(row_obj);
       this.dataSource.data = this.dataSource.data.filter((obj,key)=>{

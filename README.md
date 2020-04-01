@@ -7,5 +7,6 @@ Run the Heroku Cloud
   - install heroku cli
   - clone this git repo
   - push code to heruko cloud (see heroku instructions)
-  - open terminal from project root dir run npm install
-  - open terminal run heroku open t open the app in the browser.
+  - create a mogo db cluster on the mongodb/atlas (cloud service for mongo db)
+  - set up connection string in heroku settings/environment variables.
+  - open terminal run heroku open to open the app in the browser.

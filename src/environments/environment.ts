@@ -4,8 +4,7 @@
 
 export const environment = {
   production: false,
-  //urlAddress: 'http://localhost:7000'
-  urlAddress: 'https://keyvaluepoc.herokuapp.com'
+  urlAddress: 'http://localhost:7000'
 };
 
 /*

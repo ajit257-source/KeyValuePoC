@@ -22,7 +22,6 @@ mongoose.Promise = global.Promise;
 //------ DB connection
 mongoose.connect(uri, options).then(
   () => {
-    console.log("DB Url:", uri);
     console.log("Database connection established!");
   },
   err => {

@@ -51,10 +51,6 @@ app.use(function(err, req, res, next) {
  app.use(errorHandler);
 
 //API EndPoints
-// app.route('/')
-//   .get(function (req, res) {
-//       res.send("Wecome to App !");
-// });
 
 app.route('/api')
   .get(function (req, res) {

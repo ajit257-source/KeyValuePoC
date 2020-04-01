@@ -42,7 +42,7 @@ export class KeyValueComponent implements OnInit, AfterViewInit {
     }, error => console.error(error));
   }
 
-  public openDialog(action: string, obj: DialogData): void {
+  public openDialog(action: string, obj: any): void {
     const dialogConfig = new MatDialogConfig();
     dialogConfig.disableClose = true;
     dialogConfig.id = "modal-component";

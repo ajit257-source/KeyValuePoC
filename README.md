@@ -10,3 +10,6 @@ Run on the Heroku Cloud
   - create a mogo db cluster on the mongodb/atlas (cloud service for mongo db)
   - set up connection string in heroku settings/environment variables.
   - open terminal run heroku open to open the app in the browser.
+
+Testing
+  - Postman has been used for API testing. 

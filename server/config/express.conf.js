@@ -61,6 +61,7 @@ app.route('/api')
       res.send("PAGE NOT FOUND", 404);
 });
 
+//better approach but for now - solves refresh issue 
 app.route('*').get(function (req, res) { //check for correct error
   res.sendFile(path.join(rootPath+'/dist/keyvalue/index.html'));
 });

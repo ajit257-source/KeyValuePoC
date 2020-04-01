@@ -61,9 +61,8 @@ app.route('/api')
       res.send("PAGE NOT FOUND", 404);
 });
 
-// final catch-all route to index.html defined last 
-server.get('*', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
+app.route('*').get(function (req, res) { //check for correct error
+  res.sendFile(path.join(rootPath+'/dist/keyvalue/index.html'));
 });
 
 module.exports = app;

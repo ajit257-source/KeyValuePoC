@@ -51,10 +51,19 @@ app.use(function(err, req, res, next) {
  app.use(errorHandler);
 
 //API EndPoints
+app.route('/')
+  .get(function (req, res) {
+      res.send("Wecome to App !");
+});
 
 app.route('/api')
   .get(function (req, res) {
-      res.status(404).send("PAGE NOT FOUND")
+      res.send("PAGE NOT FOUND", 404);
+});
+
+// final catch-all route to index.html defined last 
+server.get('*', (req, res) => {
+  res.sendFile(__dirname + '/index.html');
 });
 
 module.exports = app;
